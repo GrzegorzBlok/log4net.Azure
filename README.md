@@ -1,5 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/stemarie/log4net.Azure.png?label=ready&title=Ready)](https://waffle.io/stemarie/log4net.Azure)
-#log4net.Azure
+[![NuGet](https://img.shields.io/nuget/v/log4net.Appender.Azure.Core.svg?style=flat)](https://www.nuget.org/packages/log4net.Appender.Azure.Core/)
 
 Transfer all your logs to the [Azure Table or Blob Storage](http://azure.microsoft.com/de-de/services/storage/) via Appender for [log4Net](https://logging.apache.org/log4net/)
 

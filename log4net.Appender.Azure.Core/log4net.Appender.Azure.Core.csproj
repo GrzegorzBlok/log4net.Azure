@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{75570697-D850-47A4-96F6-9A79BF5FCACF}</ProjectGuid>
+    <RootNamespace>log4net.Appender.Azure.Core</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyTitle>log4net.Appender.Azure.Core</AssemblyTitle>
+    <Product>log4net.Appender.Azure.Core</Product>
+    <Copyright></Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <PackageId>log4net.Appender.Azure.Core</PackageId>
+    <Authors>Grzegorz Blok, Karell Ste-Marie</Authors>
+    <RepositoryUrl>https://github.com/GrzegorzBlok/log4net.Azure.Core</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Azure.Storage.Queue" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+</Project>

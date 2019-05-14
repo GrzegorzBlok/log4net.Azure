@@ -12,7 +12,7 @@ Add To project via NuGet:
 ### Table Storage 
 Every log entry is stored in a separate row.
 
-	<appender name="AzureTableAppender" type="log4net.Appender.AzureTableAppender, log4net.Appender.Azure">
+	<appender name="AzureTableAppender" type="log4net.Appender.Azure.Core.AzureTableAppender, log4net.Appender.Azure.Core">
 	   <param name="TableName" value="testLoggingTable"/>
 	   <!-- You can either specify a connection string or use the ConnectionStringName property instead -->
 	   <param name="ConnectionString" value="UseDevelopmentStorage=true"/>
@@ -44,7 +44,7 @@ Every log entry is stored in a separate row.
 ### BlobStorage
 Every log Entry is stored as separate XML file.
 
-    <appender name="AzureBlobAppender" type="log4net.Appender.AzureBlobAppender, log4net.Appender.Azure">
+    <appender name="AzureBlobAppender" type="log4net.Appender.Azure.Core.AzureBlobAppender, log4net.Appender.Azure.Core">
       <param name="ContainerName" value="testloggingblob"/>
       <param name="DirectoryName" value="logs"/>
       <!-- You can either specify a connection string or use the ConnectionStringName property instead -->
@@ -64,7 +64,7 @@ Every log Entry is stored as separate XML file.
 ### AppendBlobStorage
 Every log Entry is stored as separate XML file.
 
-    <appender name="AzureAppendBlobAppender" type="log4net.Appender.AzureAppendBlobAppender, log4net.Appender.Azure">
+    <appender name="AzureAppendBlobAppender" type="log4net.Appender.Azure.Core.AzureAppendBlobAppender, log4net.Appender.Azure.Core">
       <param name="ContainerName" value="testloggingblob"/>
       <param name="DirectoryName" value="logs"/>
       <!-- You can either specify a connection string or use the ConnectionStringName property instead -->

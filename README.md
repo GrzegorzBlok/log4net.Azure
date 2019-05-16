@@ -80,6 +80,3 @@ Every log Entry is stored as separate XML file.
 * <b>ConnectionStringName:</b>  
   Name of a connection string specified under connectionString
   
-## View Logs
-
-You can take a look on this [Site](http://storagetools.azurewebsites.net/) to use one of this tools based on your selected appender.

@@ -5,7 +5,7 @@ Transfer all your logs to the [Azure Table or Blob Storage](http://azure.microso
 ## Install
 Add To project via NuGet:  
 1. Right click on a project and click 'Manage NuGet Packages'.  
-2. Search for 'log4net.Appender.Azure' and click 'Install'.  
+2. Search for 'log4net.Appender.Azure.Core' and click 'Install'.  
 
 ## Configuration
 ### Table Storage 
@@ -23,6 +23,9 @@ Every log entry is stored in a separate row.
 		Default: all Custom Properties were logged into one single field -->
 	   <param name="PropAsColumn" value="true" />
 	   <param name="PartitionKeyType" value="LoggerName" />
+	   <layout type="log4net.Layout.PatternLayout">
+	   	   <conversionPattern value="[%property{methodAndUri}] %method -- %message %exception" />
+	   </layout>
 	 </appender>
 	
 * <b>TableName:</b>  

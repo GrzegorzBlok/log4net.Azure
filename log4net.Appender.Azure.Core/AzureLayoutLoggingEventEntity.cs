@@ -20,6 +20,14 @@ namespace log4net.Appender.Azure.Core
                 Message = w.ToString();
             }
 
+            // Azure Storage Table string is encoded as a UTF-16-encoded value.
+            // String values may be up to 64 KB in size. Note that the maximum number of characters supported is about 32 K or less.
+            // To be safe we allow 32k characters instead of 32KB of string.
+            if (Message.Length >= 32000)
+            {
+                Message = $"{Message.Substring(0, 31987)}... TRUNCATED";
+            }
+
             PartitionKey = e.MakePartitionKey(partitionKeyType);
             RowKey = e.MakeRowKey();
         }

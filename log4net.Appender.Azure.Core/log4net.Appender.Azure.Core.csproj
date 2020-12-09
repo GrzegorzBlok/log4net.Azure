@@ -6,17 +6,18 @@
     <AssemblyTitle>log4net.Appender.Azure.Core</AssemblyTitle>
     <Product>log4net.Appender.Azure.Core</Product>
     <Copyright></Copyright>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <PackageId>log4net.Appender.Azure.Core</PackageId>
     <Authors>Grzegorz Blok, Karell Ste-Marie</Authors>
     <RepositoryUrl>https://github.com/GrzegorzBlok/log4net.Azure.Core</RepositoryUrl>
+    <Version>1.0.2</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.1" />
-    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="10.0.3" />
-    <PackageReference Include="Microsoft.Azure.Storage.Queue" Version="10.0.3" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.8" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.2" />
+    <PackageReference Include="Microsoft.Azure.Storage.Queue" Version="11.2.2" />
   </ItemGroup>
 </Project>
